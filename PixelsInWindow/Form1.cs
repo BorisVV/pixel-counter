@@ -17,11 +17,11 @@ namespace PixelsInWindow
             InitializeComponent();
         }
 
-        //private void PixelsLabel_Load(object sender, EventArgs e)
-        //{
-        //    int pixels = getPixels();
-        //    label1.Text = "This window contains " + pixels + " pixels ";
-        //}
+        private void PixelsLabel_Load(object sender, EventArgs e)
+        {
+            int pixels = getPixels();
+            label1.Text = "This window contains " + pixels + " pixels ";
+        }
 
         private int getPixels()
         {

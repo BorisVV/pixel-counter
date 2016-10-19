@@ -48,6 +48,7 @@
             this.Name = "PixelsLabel";
             this.Text = "Pixels in Window";
             this.Load += new System.EventHandler(this.PixelsLabel_Load);
+            this.Resize += new System.EventHandler(this.Form1_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
 

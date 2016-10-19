@@ -17,11 +17,11 @@ namespace PixelsInWindow
             InitializeComponent();
         }
 
-        private void PixelsLabel_Load(object sender, EventArgs e)
-        {
-            int pixels = getPixels();
-            label1.Text = "This window contains " + pixels + " pixels ";
-        }
+        //private void PixelsLabel_Load(object sender, EventArgs e)
+        //{
+        //    int pixels = getPixels();
+        //    label1.Text = "This window contains " + pixels + " pixels ";
+        //}
 
         private int getPixels()
         {
@@ -29,6 +29,12 @@ namespace PixelsInWindow
             int width = this.Size.Width;
             int pixels = height * width;
             return pixels;
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            int pixels = getPixels();
+            label1.Text = "After resizing, this window contains " + pixels + " pixels";
         }
     }
 }

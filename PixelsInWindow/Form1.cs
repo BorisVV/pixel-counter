@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PixelsInWindow
 {
-    public partial class Form1 : Form
+    public partial class PixelsLabel : Form
     {
-        public Form1()
+        public PixelsLabel()
         {
             InitializeComponent();
         }
